@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'jvmtest.App'
+        )
+    }
+}
+
+application {
+    mainClassName = 'jvmtest.App'
+}
